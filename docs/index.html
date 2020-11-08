@@ -129,14 +129,23 @@
             background-color: #282a36;
             border-radius: 12px;
             display: block;
-            font-weight: bold;
             margin-top: 15px;
-            padding: 15px;
         }
 
         .link:hover {
             background-color: #323442;
             text-decoration: none;
+        }
+
+        .link .description {
+            color: white;
+            padding: 15px;
+            padding-top: 0;
+        }
+
+        .link .title {
+            font-weight: bold;
+            padding: 15px;
         }
 
     </style>
@@ -168,10 +177,20 @@
 
     <div class="content">
 
-        <p>Encuentra información útil que te permitirá desarrollarte como programador.</p>
+        <p>Mejora tus habilidades de programación con esta colección de ejercicios.</p>
 
         
-            <a class="link" href="http://codigocurioso.com/ejercicios/">Ejercicios</a>
+            
+                <a class="link" href="http://codigocurioso.com/ejercicios/00001-es-unico/">
+                    <div class="title">¿Es Único?</div>
+                    <div class="description">Determinar si una cadena de texto tiene caracteres duplicados</div>
+                </a>
+            
+                <a class="link" href="http://codigocurioso.com/ejercicios/00002-es-permutacion/">
+                    <div class="title">¿Es Permutación?</div>
+                    <div class="description">Determinar si una cadena de texto es permutación de otra cadena de texto</div>
+                </a>
+            
         
     </div>
 </div>

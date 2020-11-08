@@ -128,14 +128,23 @@
             background-color: #282a36;
             border-radius: 12px;
             display: block;
-            font-weight: bold;
             margin-top: 15px;
-            padding: 15px;
         }
 
         .link:hover {
             background-color: #323442;
             text-decoration: none;
+        }
+
+        .link .description {
+            color: white;
+            padding: 15px;
+            padding-top: 0;
+        }
+
+        .link .title {
+            font-weight: bold;
+            padding: 15px;
         }
 
     </style>
@@ -169,10 +178,6 @@
 
   
     
-    <li>
-      / <a href="http://codigocurioso.com/ejercicios/">Ejercicios</a>
-    </li>
-    
   
 
   
@@ -191,22 +196,24 @@
 
 
     <div class="content">
-        <h1>¿Es Único?</h1>
-        <p>Implemente un algoritmo para determinar si una cadena de texto tiene sólo caracteres únicos.</p>
-<h2 id="resultados-esperados">Resultados esperados</h2>
+
+        <h1 id="es-único">¿Es Único?</h1>
+<h2 id="descripción">Descripción</h2>
+<p>Implemente un algoritmo para determinar si una cadena de texto tiene sólo caracteres únicos.</p>
+<h3 id="resultados-esperados">Resultados esperados</h3>
 <pre><code class="language-shell"> &gt; IsUnique(&quot;abcd&quot;);
    true
 </code></pre>
 <pre><code class="language-shell"> &gt; IsUnique(&quot;abccd&quot;);
    false
 </code></pre>
-<h1 id="solución">Solución</h1>
-<h2 id="análisis">Análisis</h2>
-<h3 id="qué-codificación-se-utilizará">¿Qué codificación se utilizará?</h3>
+<h2 id="solución">Solución</h2>
+<h3 id="análisis">Análisis</h3>
+<h4 id="qué-codificación-se-utilizará">¿Qué codificación se utilizará?</h4>
 <p>Cuando un ejercicio de programación hace uso de caracteres puede ser importante conocer el tipo de codificación que se utilizará. Si sabes el tipo de codificación a utilizar te dará la posibilidad de realizar algoritmos más eficientes.</p>
 <p>No es lo mismo esperar recibir una cadena de texto ASCII a recibir una cadena de texto Unicode. ASCII está compuesto de 128 carateres mientras que Unicode actualmente en la versión 13.0 tiene 143924 caracteres, una diferencia considerable. Por otro lado ASCII extendido cuenta con 256 caracteres.</p>
 <p>Si en el enunciado del problema no especifica la codificación, puedes preguntarle al entrevistador si sabe el tipo de codificación a utilzar. Si te dice la codificación ya tienes un dato importante para definir tu algoritmo, si no al menos mostraste al entrevistador que prestas atención a los detalles ;)</p>
-<h3 id="retornar-una-respuesta-rápidamente-en-cadenas-de-texto-largas">Retornar una respuesta rápidamente en cadenas de texto largas</h3>
+<h4 id="retornar-una-respuesta-rápidamente-en-cadenas-de-texto-largas">Retornar una respuesta rápidamente en cadenas de texto largas</h4>
 <p>Si se te ha dado la codificación, éste puede ser utilizado para determinar si hay caracteres duplicados en cadenas de texto largas rápidamente.</p>
 <p>Supongamos que se te ha dicho que la cadena de texto que recibirá el algoritmo es ASCII. Habíamos mencionado que ASCII se compone de 128 caracteres únicos, entonces es válido suponer que si una cadena de texto tiene una longitud de 129 al menos un caracter está duplicado. En ASCII no es posible tener cadenas de texto de longitud mayor a 128 sin que haya al menos un caracter duplicado.</p>
 <p>Este es un punto importante a considerar ya que ayuda a crear un algoritmo altamente eficiente. Se puede definir una condición que valida la longitud de la cadena de texto. Si la cadena de texto es mayor a 128 caracteres se devuelve false inmediatamente. Si no, se recorre todo la cadena de texto en busca de duplicados, pero en el peor de los casos se recorrerá una cadena de texto de 128 caracteres.</p>
@@ -215,7 +222,7 @@
     return false;
 }
 </code></pre>
-<h3 id="almacenamiento-en-memoria">Almacenamiento en memoria</h3>
+<h4 id="almacenamiento-en-memoria">Almacenamiento en memoria</h4>
 <p>En este ejercicio necesitarás almacenar temporalmente en memoria los caracteres revisados.</p>
 <p>Debes conocer bien el lenguaje utilizado para determinar la mejor estructura a utilizar. Es importante considerar que debes poder almacenar la letra revisada, pero además deberás de poder buscarlo rápidamente si la nacesitas.</p>
 <p>Opciones para almacenar en estos casos están las <strong>tablas hash</strong> o <strong>diccionarios</strong>. También puedes considerar utilizar un <strong>arreglo indexado</strong>.</p>
@@ -223,8 +230,8 @@
 <pre><code class="language-Java">boolean[] lettersFound = new boolean[128];
 </code></pre>
 <p>Independiente del almacenamiento utilizado, toma encuenta almacenar la menor información posible. Si necesitas definir un tipo de dato, procura utilizar boleanos o bit.</p>
-<h2 id="respuestas">Respuestas</h2>
-<h3 id="respuesta-1">Respuesta 1</h3>
+<h3 id="respuestas">Respuestas</h3>
+<h4 id="respuesta-1">Respuesta 1</h4>
 <p>Si no sabes la codificación de texto puedes crear un código como el siguiente (Entre más largo el texto más iteraciones tendrá que realizar).</p>
 <pre><code class="language-JavaScript">function IsUnique(text) {
     let result = true;
@@ -242,7 +249,7 @@
     return result;
 }
 </code></pre>
-<h3 id="respuesta-2">Respuesta 2</h3>
+<h4 id="respuesta-2">Respuesta 2</h4>
 <p>Si sabes que la codificación es ASCII puedes utilizar el siguiente código (En textos mayores a 128 caracteres devolverá el resultado inmediatamente).</p>
 <pre><code class="language-JavaScript">const ASCII_LENGTH = 128;
 
@@ -266,7 +273,7 @@ function IsUnique(text) {
     return result;
 }
 </code></pre>
-<h3 id="respuesta-3">Respuesta 3</h3>
+<h4 id="respuesta-3">Respuesta 3</h4>
 <p>Si no es permitido utilizar estructuras de datos adicionales, deberás de utilizar dos ciclos.</p>
 <pre><code class="language-JavaScript">function IsUnique(text) {
     
@@ -281,7 +288,7 @@ function IsUnique(text) {
     return true;
 }
 </code></pre>
-<h3 id="respuesta-4">Respuesta 4</h3>
+<h4 id="respuesta-4">Respuesta 4</h4>
 <p>Si te es permitido modificar el string de entrada, podrías ordenarlo primero y verificar si hay dos letras a la par iguales.</p>
 <pre><code class="language-JavaScript">function IsUnique(text) {
     
@@ -298,8 +305,8 @@ function IsUnique(text) {
 </code></pre>
 
 
-        <p>¿Tienes una mejor respuesta o consideras que es necesario cambiar algo?<br>Edita el contenido de está página <a href="https://github.com/CodigoCurioso/CodigoCurioso.github.io">AQUÍ</a></p>
-        <p>¿Necesitas la solución de algún ejercicio?<br>Solicítalo <a href="https://github.com/CodigoCurioso/CodigoCurioso.github.io">AQUÍ</a></p>
+        <p>¿Tienes una mejor respuesta o consideras que es necesario cambiar algo?<br>Edita el contenido de está página <a href="https://github.com/CodigoCurioso/contents/blob/main/ejercicios/00001-es-unico.md" target="_blank">AQUÍ</a></p>
+        <p>¿Necesitas la solución de algún ejercicio?<br>Solicítalo <a href="https://github.com/CodigoCurioso/contents/issues" target="_blank">AQUÍ</a></p>
     </div>
 </div>
 

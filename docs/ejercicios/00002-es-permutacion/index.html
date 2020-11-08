@@ -128,14 +128,23 @@
             background-color: #282a36;
             border-radius: 12px;
             display: block;
-            font-weight: bold;
             margin-top: 15px;
-            padding: 15px;
         }
 
         .link:hover {
             background-color: #323442;
             text-decoration: none;
+        }
+
+        .link .description {
+            color: white;
+            padding: 15px;
+            padding-top: 0;
+        }
+
+        .link .title {
+            font-weight: bold;
+            padding: 15px;
         }
 
     </style>
@@ -169,10 +178,6 @@
 
   
     
-    <li>
-      / <a href="http://codigocurioso.com/ejercicios/">Ejercicios</a>
-    </li>
-    
   
 
   
@@ -191,38 +196,14 @@
 
 
     <div class="content">
-        <h1>¿Es Permutación?</h1>
-        <p>Implemente un algoritmo para determinar si una cadena de texto es permutación de otra cadena de texto.</p>
-<h2 id="ejemplos">Ejemplos</h2>
-<pre><code class="language-Shell"> &gt; IsUnique(&quot;abcd&quot;);
-   true
-</code></pre>
-<pre><code class="language-Shell"> &gt; IsUnique(&quot;abccd&quot;);
-   false
-</code></pre>
-<h2 id="solución">Solución</h2>
-<h3 id="análisis">Análisis</h3>
-<h3 id="respuesta">Respuesta</h3>
-<pre><code class="language-JavaScript">function IsUnique(text) {
-    let result = true;
-    const lettersFound = [];
-    
-    for(letter of text) {
-        if (lettersFound[letter]) {
-            result = false;
-            break;
-        } 
-    
-        lettersFound[letter] = true;
-    }
-    
-    return result;
-}
-</code></pre>
+
+        <h1 id="es-permutación">¿Es Permutación?</h1>
+<h2 id="descripción">Descripción</h2>
+<p>Implemente un algoritmo para determinar si una cadena de texto es permutación de otra cadena de texto.</p>
 
 
-        <p>¿Tienes una mejor respuesta o consideras que es necesario cambiar algo?<br>Edita el contenido de está página <a href="https://github.com/CodigoCurioso/CodigoCurioso.github.io">AQUÍ</a></p>
-        <p>¿Necesitas la solución de algún ejercicio?<br>Solicítalo <a href="https://github.com/CodigoCurioso/CodigoCurioso.github.io">AQUÍ</a></p>
+        <p>¿Tienes una mejor respuesta o consideras que es necesario cambiar algo?<br>Edita el contenido de está página <a href="https://github.com/CodigoCurioso/contents/blob/main/ejercicios/00002-es-permutacion.md" target="_blank">AQUÍ</a></p>
+        <p>¿Necesitas la solución de algún ejercicio?<br>Solicítalo <a href="https://github.com/CodigoCurioso/contents/issues" target="_blank">AQUÍ</a></p>
     </div>
 </div>
 
