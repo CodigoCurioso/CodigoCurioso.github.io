@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://codigocurioso.com/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/ejercicios/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/tags/permutacion-cadena-de-texto-arreglos/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/tags/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/ejercicios/00002-es-permutacion/</loc>
+    <lastmod>2020-11-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/tags/caracteres-cadena-de-texto-duplicados-arreglos/</loc>
+    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/ejercicios/00001-es-unico/</loc>
+    <lastmod>2020-11-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://codigocurioso.com/categories/</loc>
+  </url>
+  
+</urlset>

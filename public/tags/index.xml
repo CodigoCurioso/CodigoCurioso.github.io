@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Código Curioso</title>
+    <link>http://codigocurioso.com/tags/</link>
+    <description>Recent content in Tags on Código Curioso</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://codigocurioso.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>permutacion cadena-de-texto arreglos</title>
+      <link>http://codigocurioso.com/tags/permutacion-cadena-de-texto-arreglos/</link>
+      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://codigocurioso.com/tags/permutacion-cadena-de-texto-arreglos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caracteres cadena-de-texto duplicados arreglos</title>
+      <link>http://codigocurioso.com/tags/caracteres-cadena-de-texto-duplicados-arreglos/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://codigocurioso.com/tags/caracteres-cadena-de-texto-duplicados-arreglos/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
