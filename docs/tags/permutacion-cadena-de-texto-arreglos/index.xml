@@ -1,25 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>permutacion cadena-de-texto arreglos on Código Curioso</title>
-    <link>http://codigocurioso.com/tags/permutacion-cadena-de-texto-arreglos/</link>
-    <description>Recent content in permutacion cadena-de-texto arreglos on Código Curioso</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>es-es</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="http://codigocurioso.com/tags/permutacion-cadena-de-texto-arreglos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>¿Es Permutación?</title>
-      <link>http://codigocurioso.com/ejercicios/00002-es-permutacion/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://codigocurioso.com/ejercicios/00002-es-permutacion/</guid>
-      <description>Implemente un algoritmo para determinar si una cadena de texto es permutación de otra cadena de texto.
-Ejemplos &amp;gt; IsUnique(&amp;quot;abcd&amp;quot;);true &amp;gt; IsUnique(&amp;quot;abccd&amp;quot;);false Solución Análisis Respuesta function IsUnique(text) {let result = true;const lettersFound = [];for(letter of text) {if (lettersFound[letter]) {result = false;break;} lettersFound[letter] = true;}return result;} </description>
-    </item>
-    
-  </channel>
-</rss>
