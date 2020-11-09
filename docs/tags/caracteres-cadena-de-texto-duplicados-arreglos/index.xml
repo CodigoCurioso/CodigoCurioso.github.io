@@ -18,7 +18,8 @@
       
       <guid>http://codigocurioso.com/ejercicios/00001-es-unico/</guid>
       <description>¿Es Único? Descripción Implemente un algoritmo para determinar si una cadena de texto tiene sólo caracteres únicos.
-Resultados esperados &amp;gt; IsUnique(&amp;quot;abcd&amp;quot;);true &amp;gt; IsUnique(&amp;quot;abccd&amp;quot;);false Solución Análisis ¿Qué codificación se utilizará? Cuando un ejercicio de programación hace uso de caracteres puede ser importante conocer el tipo de codificación que se utilizará. Si sabes el tipo de codificación a utilizar te dará la posibilidad de realizar algoritmos más eficientes.</description>
+Resultados esperados &amp;gt; IsUnique(&amp;quot;abcd&amp;quot;);true &amp;gt; IsUnique(&amp;quot;abccd&amp;quot;);false Solución Análisis Codificación Cuando un ejercicio de programación hace uso de caracteres puede ser importante conocer el tipo de codificación que se utilizará. Si sabes el tipo de codificación a utilizar te dará la posibilidad de realizar algoritmos más eficientes.
+No es lo mismo esperar recibir una cadena de texto ASCII a recibir una cadena de texto Unicode.</description>
     </item>
     
   </channel>

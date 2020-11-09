@@ -123,6 +123,10 @@
             width: 220px;
         }
 
+        #header > div span:first-child {
+            font-size: 60px;
+        }
+
 
 
          
@@ -174,7 +178,11 @@
             }
 
             #header > div {
-                padding-bottom: 25px;
+                padding-bottom: 35px;
+            }
+
+            #header > div span:first-child {
+                font-size: 35px;
             }
         }
 
@@ -185,7 +193,7 @@
         <a id="header" href="/">
             <img src="/logo.webp" alt="Logo de Código Curioso">
             <div>
-                <span style="font-size: 60px;">CodigoCurioso</span><span>.com</span>
+                <span>CodigoCurioso</span><span>.com</span>
             </div>
         </a>
 
@@ -240,10 +248,10 @@
 </code></pre>
 <h2 id="solución">Solución</h2>
 <h3 id="análisis">Análisis</h3>
-<h4 id="qué-codificación-se-utilizará">¿Qué codificación se utilizará?</h4>
+<h4 id="codificación">Codificación</h4>
 <p>Cuando un ejercicio de programación hace uso de caracteres puede ser importante conocer el tipo de codificación que se utilizará. Si sabes el tipo de codificación a utilizar te dará la posibilidad de realizar algoritmos más eficientes.</p>
 <p>No es lo mismo esperar recibir una cadena de texto ASCII a recibir una cadena de texto Unicode. ASCII está compuesto de 128 carateres mientras que Unicode actualmente en la versión 13.0 tiene 143924 caracteres, una diferencia considerable. Por otro lado ASCII extendido cuenta con 256 caracteres.</p>
-<p>Si en el enunciado del problema no especifica la codificación, puedes preguntarle al entrevistador si sabe el tipo de codificación a utilzar. Si te dice la codificación ya tienes un dato importante para definir tu algoritmo, si no al menos mostraste al entrevistador que prestas atención a los detalles ;)</p>
+<p>Si el enunciado del problema no especifica la codificación, puedes preguntarle al entrevistador si sabe el tipo de codificación a utilzar. Si te dice la codificación ya tienes un dato importante para definir tu algoritmo, si no al menos mostraste al entrevistador que prestas atención a los detalles ;)</p>
 <h4 id="retornar-una-respuesta-rápidamente-en-cadenas-de-texto-largas">Retornar una respuesta rápidamente en cadenas de texto largas</h4>
 <p>Si se te ha dado la codificación, éste puede ser utilizado para determinar si hay caracteres duplicados en cadenas de texto largas rápidamente.</p>
 <p>Supongamos que se te ha dicho que la cadena de texto que recibirá el algoritmo es ASCII. Habíamos mencionado que ASCII se compone de 128 caracteres únicos, entonces es válido suponer que si una cadena de texto tiene una longitud de 129 al menos un caracter está duplicado. En ASCII no es posible tener cadenas de texto de longitud mayor a 128 sin que haya al menos un caracter duplicado.</p>
