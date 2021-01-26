@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¿Es Permutación? - Código Curioso</title>
-    <meta name="description" content="ejercicio: Determinar si una cadena de texto es permutación de otra cadena de texto">
+    <meta name="description" content="Ejercicio: Determinar si una cadena de texto es permutación de otra cadena de texto">
     <link rel="icon" href="/logo.png">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
@@ -249,7 +249,43 @@
 
     <div class="content">
 
-        <p>Implemente un algoritmo para determinar si una cadena de texto es permutación de otra cadena de texto.</p>
+        <h1 id="es-permutación">¿Es Permutación?</h1>
+<h2 id="descripción">Descripción</h2>
+<p>Implemente un algoritmo que reciba dos cadenas de texto. El algoritmo debe devolver <strong>True</strong> en el caso de que una cadena de texto es permutación de la otra, en el caso contrario debe devolver <strong>False</strong>.</p>
+<h3 id="resultados-esperados">Resultados esperados</h3>
+<pre><code class="language-shell"> &gt; IsPermutation(&quot;god&quot;, &quot;dog&quot;);
+   true
+</code></pre>
+<pre><code class="language-shell"> &gt; IsPermutation(&quot;abc&quot;, &quot;cba&quot;);
+   true
+</code></pre>
+<pre><code class="language-shell"> &gt; IsPermutation(&quot;abc&quot;, &quot;cbaa&quot;);
+   false
+</code></pre>
+<pre><code class="language-shell"> &gt; IsPermutation(&quot;god&quot;, &quot;good&quot;);
+   false
+</code></pre>
+<h2 id="solución">Solución</h2>
+<h3 id="análisis">Análisis</h3>
+<h4 id="puntos-a-aclarar">Puntos a aclarar</h4>
+<p>Antes de comenzar a buscar una solución es importante revisar en el enunciado o con el entrevistador lo siguiente:</p>
+<ul>
+<li>¿La permutación distinguirá entre mayúsculas y minúsculas?</li>
+<li>¿Los espacios en blanco serán tomados en cuenta?</li>
+</ul>
+<h4 id="longitud-de-las-cadenas-de-texto">Longitud de las cadenas de texto</h4>
+<p>Una primera condición que puedes realizar en este ejercicio es verificar que ambas cadenas de texto tengan la misma longitud. Si no tienen la misma longitud se sabe inmediatamente que no son permutación.</p>
+<h4 id="puedes-ordenar-los-caracteres">¿Puedes ordenar los caracteres?</h4>
+<p>La posibilidad de ordenar los caracteres, te permitirá implementar fácilmente una solución.</p>
+<p>Si ordenas ambas cadenas de texto lo único que tendrás que hacer luego es validar que las cadenas de texto sean iguales. Si son iguales entonces una cadena si es permutación de otra, si no son iguales entonces no son permutación.</p>
+<h4 id="solución-sin-realizar-ordenamientos">Solución sin realizar ordenamientos</h4>
+<p>Validar una permutación se resume en lo siguiente:</p>
+<blockquote>
+<p>La cantidad de veces que se repite cada letra en una cadena de texto debe ser igual que en la otra cadena de texto. Si esto se cumple es una permutación, en caso contrario no lo es.</p>
+</blockquote>
+<p>Si no puedes realizar ordenamientos, tendrás la obligación de recorrer los caracteres de las cadenas de texto revisando que sean permutación.</p>
+<h3 id="respuestas">Respuestas</h3>
+<h4 id="respuesta-1">Respuesta 1</h4>
 
 
         <p>¿Tienes una mejor respuesta o consideras que es necesario cambiar algo?<br>Edita el contenido de está página <a href="https://github.com/CodigoCurioso/contents/blob/main/ejercicios/00002-es-permutacion.md" target="_blank" rel="noreferrer noopener nofollow">AQUÍ</a></p>
@@ -258,5 +294,14 @@
 </div>
 
     </div>
+    <script type="text/javascript">
+    window._mfq = window._mfq || [];
+    (function() {
+        var mf = document.createElement("script");
+        mf.type = "text/javascript"; mf.defer = true;
+        mf.src = "//cdn.mouseflow.com/projects/53f234c8-225e-4738-a316-7dd06b09a38c.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+    </script>
 </body>
 </html>

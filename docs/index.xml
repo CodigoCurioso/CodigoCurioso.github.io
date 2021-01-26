@@ -6,7 +6,7 @@
     <description>Recent content on Código Curioso</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 05 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://codigocurioso.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,10 +14,11 @@
     <item>
       <title>¿Es Permutación?</title>
       <link>http://codigocurioso.com/ejercicios/00002-es-permutacion/</link>
-      <pubDate>Thu, 05 Nov 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
       
       <guid>http://codigocurioso.com/ejercicios/00002-es-permutacion/</guid>
-      <description>Implemente un algoritmo para determinar si una cadena de texto es permutación de otra cadena de texto.</description>
+      <description>¿Es Permutación? Descripción Implemente un algoritmo que reciba dos cadenas de texto. El algoritmo debe devolver True en el caso de que una cadena de texto es permutación de la otra, en el caso contrario debe devolver False.
+Resultados esperados &amp;gt; IsPermutation(&amp;quot;god&amp;quot;, &amp;quot;dog&amp;quot;);true &amp;gt; IsPermutation(&amp;quot;abc&amp;quot;, &amp;quot;cba&amp;quot;);true &amp;gt; IsPermutation(&amp;quot;abc&amp;quot;, &amp;quot;cbaa&amp;quot;);false &amp;gt; IsPermutation(&amp;quot;god&amp;quot;, &amp;quot;good&amp;quot;);false Solución Análisis Puntos a aclarar Antes de comenzar a buscar una solución es importante revisar en el enunciado o con el entrevistador lo siguiente:</description>
     </item>
     
     <item>
